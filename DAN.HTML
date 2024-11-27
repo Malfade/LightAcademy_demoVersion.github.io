@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Andev Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #B4B4B4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .sci {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .sci li {
+        list-style: none;
+    }
+
+    .sci li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        background: #fff;
+        color: #333;
+        font-size: 6em;
+        text-decoration: none;
+        border-radius: 10px;
+        transform-style: preserve-3d;
+        transition: background 0.25s;
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+    }
+
+    .sci li a:hover {
+        background: var(--clr);
+        box-shadow: 0 25px 35px rgba(0, 0, 0, 0.25);
+        border: 5px solid var(--clr);
+    }
+
+    .sci li a i {
+        transition: 0.5s;
+        pointer-events: none;
+    }
+
+    .sci li a:hover i {
+        transform: scale(1.5) translateZ(50px);
+        color: #fff;
+    }
+
+    /* Медиазапрос для экранов шириной до 768px (например, мобильные устройства) */
+    @media (max-width: 768px) {
+        .sci {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .sci li a {
+            width: 200px;
+            height: 200px;
+            font-size: 4em;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <ul class="sci">
+      <li style="--clr: #ff0000;"><a href="https://www.youtube.com/@MarketProfi_Team" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+      <li style="--clr: #0088cc;"><a href="https://t.me/MarketProfi_Team" target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+      <li style="--clr: #e4405f;"><a href="https://www.instagram.com/business_v_plus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+        max: 30,
+        speed: 400,
+        glare: true
+    });
+
+    let list = document.querySelectorAll('.sci li');
+    let bg = document.querySelector('body');
+
+    list.forEach(element => {
+        element.addEventListener('mouseenter', function(event){
+            let color = event.target.style.getPropertyValue('--clr');
+            bg.style.backgroundColor = color;
+        })
+        element.addEventListener('mouseleave', function(event){
+            bg.style.backgroundColor = '#B4B4B4'; /* Новый цвет при уходе курсора */
+        })
+    })
+  </script>
+</body>
+</html>

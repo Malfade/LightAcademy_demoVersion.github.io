@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакты - Light Academy College</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 50px;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .sci {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .sci li {
+            list-style: none;
+        }
+
+        .sci li a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            background: #fff;
+            color: #333;
+            font-size: 6em;
+            text-decoration: none;
+            border-radius: 10px;
+            transform-style: preserve-3d;
+            transition: background 0.25s;
+            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .sci li a:hover {
+            background: var(--clr);
+            box-shadow: 0 25px 35px rgba(0, 0, 0, 0.25);
+            border: 5px solid var(--clr);
+        }
+
+        .sci li a i {
+            transition: 0.5s;
+            pointer-events: none;
+        }
+
+        .sci li a:hover i {
+            transform: scale(1.5) translateZ(50px);
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            .sci {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .sci li a {
+                width: 200px;
+                height: 200px;
+                font-size: 4em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Light Academy College</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О колледже</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Программы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admissions.html">Поступление</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Подключение JavaScript библиотек -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-QF5XRzRiD9AxZjP7HGGwnLZcJC9BLuVVp2tt5iyQU4C64h6fYDiweI+Pw01qlf1g" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Lp7gxS/JWOEqPstW5dL64AkldUvNjGmgna3JR4pIojl3DlxdbCuj0HiY73QKfZ8d" crossorigin="anonymous"></script>
+
+    <header class="bg-primary text-white text-center py-5">
+        <h1 class="display-4">Контакты</h1>
+        <p class="lead">Свяжитесь с нами или найдите нас на карте</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-section">
+            <h2>Контактная информация</h2>
+            <p><strong>Адрес:</strong> г. Бишкек, ул. Ахунбаева 123</p>
+            <p><strong>Телефон:</strong> +996 312 123 456</p>
+            <p><strong>Email:</strong> info@lightacademy.kg</p>
+            <p><strong>Часы работы:</strong> Пн-Пт, 09:00 - 18:00</p>
+        </div>
+
+        <div class="contact-section">
+            <h2>Мы на карте</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.9409576064226!2d-74.00594148459725!3d40.71277597933092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDAlNDInNDYuMCJOIDc0wrAwMCcwNC4wIlc!5e0!3m2!1sen!2sus!4v1612123456789" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Ссылки на социальные сети -->
+        <div class="container">
+            <h3 class="text-center">Свяжитесь с нами в социальных сетях</h3>
+            <ul class="sci">
+                <li style="--clr: #ff0000;">
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li style="--clr: #0088cc;">
+                    <a href="https://t.me/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                </li>
+                <li style="--clr: #e4405f;">
+                    <a href="https://www.instagram.com/light_academy.college/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Light Academy College. Все права защищены.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+            max: 30,
+            speed: 400,
+            glare: true
+        });
+
+        let list = document.querySelectorAll('.sci li');
+        let bg = document.querySelector('body');
+
+        list.forEach(element => {
+            element.addEventListener('mouseenter', function(event){
+                let color = event.target.style.getPropertyValue('--clr');
+                bg.style.backgroundColor = color;
+            });
+            element.addEventListener('mouseleave', function(event){
+                bg.style.backgroundColor = '#f9f9f9';
+            });
+        });
+    </script>
+</body>
+</html>
