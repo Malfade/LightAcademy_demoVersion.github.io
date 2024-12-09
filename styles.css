@@ -1,7 +1,7 @@
-/* Base styles */
+/* Основные стили */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
+    --primary-color: #136eaa;
+    --secondary-color: #1a271f;
     --text-color: #333;
     --bg-color: #f9f9f9;
     --font-family: 'Roboto', sans-serif;
@@ -20,14 +20,14 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* Навигация */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background: var(--primary-color);
-    color: #fff;
+    color: #8b4e4e;
 }
 
 .navbar .menu {
@@ -37,7 +37,7 @@ body {
 }
 
 .navbar .menu a {
-    color: #fff;
+    color: #f0f0f0;
     text-decoration: none;
     font-weight: bold;
 }
@@ -46,7 +46,7 @@ body {
     text-decoration: underline;
 }
 
-/* Hero section */
+/* Главный раздел */
 .hero {
     text-align: center;
     padding: 2rem;
@@ -58,22 +58,74 @@ body {
     font-size: 2.5rem;
 }
 
-.hero .btn {
-    display: inline-block;
-    margin-top: 1rem;
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Раздел Портфолио */
+.portfolio {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.portfolio .row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.portfolio .card {
+    flex: 1 1 calc(33.333% - 1rem);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.portfolio .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio .card-body {
+    padding: 1rem;
+}
+
+.portfolio .card-title {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.portfolio .card-text {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+.portfolio .btn {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
     padding: 0.5rem 1rem;
-    background: #fff;
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
     border-radius: 5px;
 }
 
-.hero .btn:hover {
-    background: #eee;
+.portfolio .btn:hover {
+    background: var(--secondary-color);
 }
 
-/* Footer */
+/* Подвал */
 footer {
     text-align: center;
     padding: 1rem;
@@ -82,11 +134,15 @@ footer {
     margin-top: 2rem;
 }
 
-/* Responsive Design */
+/* Адаптивный дизайн */
 @media (max-width: 768px) {
     .navbar .menu {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .portfolio .row {
+        flex-direction: column;
     }
 
     .hero h1 {
