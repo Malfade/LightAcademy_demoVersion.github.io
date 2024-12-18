@@ -1,0 +1,70 @@
+/* Глобальные стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #136eaa; /* Основной цвет */
+    padding: 1rem 2rem;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .menu a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar .menu a:hover {
+    text-decoration: underline;
+}
+
+.navbar .navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+
+
+/* Главный раздел */
+.hero {
+    text-align: center;
+    padding: 2rem;
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Портфолио</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Light Academy College</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/html/index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/html/part.html">Портфолио студентов</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+        <link rel="stylesheet" href="/css/portfolio.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>    
+<body>
+    <div class="portfolio.css">
+    <div class="container">
+        <!-- Левая часть с изображением -->
+        <div class="left">
+            <div class="photo">
+                <img src="/img/c7008e25-b2f0-47a4-9160-ae7b5a01b583.jpg" alt="Profile Photo">
+            </div>
+        </div>
+        <!-- Правая часть с информацией -->
+        <div class="right">
+            <header>
+                <h1>Krystian Kubicki</h1>
+                <p>
+                    <span>mobile:</span> (+48) 777 666 555 <br>
+                    <span>email:</span> myemail@gmail.com <br>
+                    <span>portfolio:</span> <a href="#">behance.net/DTrepper</a>
+                </p>
+            </header>
+            <section class="about">
+                <p>
+                    I'm a 26 year old Computer Graphic & Freelance Designer from Poland.
+                    I love everything that has to do with web design & development, graphic design,
+                    packaging, industrial design, and I feel a true devotion for typography.
+                </p>
+                <p>
+                    I have 7 years of experience as a freelancer and 3 years working for design studios.
+                    Let’s work together!
+                </p>
+            </section>
+            <section class="experience">
+                <h2>Work Experience</h2>
+                <div class="work-stats">
+                    <div class="stat">
+                        <h3>7</h3>
+                        <p>years as Freelancer</p>
+                    </div>
+                    <div class="stat">
+                        <h3>3</h3>
+                        <p>years working for Design Studios</p>
+                    </div>
+                    <div class="stat">
+                        <h3>2</h3>
+                        <p>years working abroad</p>
+                    </div>
+                    <div class="stat">
+                        <h3>457+</h3>
+                        <p>Finished projects</p>
+                    </div>
+                </div>
+            </section>
+            <section class="skills">
+                <h2>Most Common Skills</h2>
+                <div class="icons">
+                    <div class="icon">Logo Design</div>
+                    <div class="icon">App Design</div>
+                    <div class="icon">Flat Web Design</div>
+                    <div class="icon">Branding</div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>© 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript для анимаций -->
+    <script>
+        ScrollReveal().reveal('.stat, .icon, header', { 
+            duration: 1500, 
+            origin: 'bottom', 
+            distance: '50px', 
+            reset: true 
+        });
+    </script>
+</body>
+</html>
